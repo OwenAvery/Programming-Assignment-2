@@ -3,22 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Alex G Fan Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+   
 </head>
 <style>
     table, td, th {
         border: solid;
         border-collapse: collapse;
     }
-   
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+    }
+   .column{
+        flex:1;
+        padding: 8px;
+        max-width: 100%;
+        max-height:100%;
+   }
+   img{
+    width: 270px;
+    height:270px;
+    object-fit: cover;
+   }
+   body{
+    text-align: center;
+    font-family:  Futura; 
+    color:rgb(255, 237, 211) ;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+   }
+   table{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 350;
+   }
+   figcaption{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 200;
+   }
+   h1{
+    font-family: "Montserrat",sans-serif;
+
+     font-weight: 800;
+     font-style: normal;
+   }
+   h2{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 600;
+   }
+   h3{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 550;
+   }
+    p{
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+   }
+
+   a:link{
+    color:rgb(188, 255, 208)
+   }
+   .Background{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: fill;
+   }
 </style>
-<body>
+<body background="bg.png">
     <div id="main-header">
         <h1>Alex G</h1>
         <h2> "The 21st Century Eliott Smith"</h2>
         <h3> A Fan Page</h3>
     </div> 
-    <div id=""body>
+    <div id="body">
         <p>
             Alexander Giannascoli (born February 3, 1993), better known by his stage names Alex G or, formerly, (Sandy) Alex G,[1] is an American musician, producer, and singer-songwriter.
              He started his career with DIY self-releases on Bandcamp and began building up an audience with his label debut, DSU (2014), released on Orchid Tapes to critical acclaim from various publications.
@@ -26,9 +92,24 @@
               In 2015, he signed with Domino Recording Company and released his sixth studio album, Beach Music. He followed it in 2017 with Rocket, which received further acclaim and recognition. 
               Giannascoli's eighth studio album, House of Sugar, was released in 2019, and his ninth, God Save the Animals, in 2022. 
         </p>
-        <img src="ALexG.jpg" width="30%">
-        <figcaption>Image Source: NME</figcaption>
-    </div>
+        <div class="flex">
+            <div class="column">
+                <img src="ALexG.jpg" >
+                <figcaption>Image Source: NME</figcaption>
+            </div>
+            <div class="column">
+            <img src="Gman2.jpg">
+            <figcaption> Image Source: NPR</figcaption>
+        </div>
+        <div class="column">
+            <img src="Gman3.webp" >
+            <figcaption>Source: Pitchfork</figcaption>
+        </div>
+        </div>
+        
+        
+<div class="flex">
+    <div class="column">
     <table>
         <tr>
             <th>Album Title</th>
@@ -37,49 +118,58 @@
             <th> Score</th>
         </tr>
         <tr>
-            <td>Race</td>
+            <td><a href="https://sandy.bandcamp.com/album/race" target="_blank">Race</a></td>
             <td>2011</td>
             <td>30 min</td>
             <td>3.75/5</td>
         </tr>
         <tr>
-            <td>Rules</td>
+            <td><a href="https://sandy.bandcamp.com/album/rules" target="_blank">Rules</a></td>
             <td>2010</td>
             <td>29 min</td>
             <td>3.56/5</td>
         </tr>
         <tr>
-            <td>Trick</td>
+            <td><a href="https://sandy.bandcamp.com/album/trick" target="_blank">Trick</a></td>
             <td>2013</td>
             <td>31 min</td>
             <td>3.73</td>
         </tr>
         <tr>
-            <td>Beach Music</td>
+            <td><a href="https://sandy.bandcamp.com/album/beach-music" target="_blank">Beach Music</a></td>
             <td>2015</td>
             <td>37 min</td>
             <td>3.64/5</td>
         </tr>
         <tr>
-            <td>Rocket</td>
+            <td><a href="https://sandy.bandcamp.com/album/rocket" target="_blank">Rocket</a></td>
             <td>2017</td>
             <td>41 min</td>
             <td>3.57/5</td>
         </tr>
         <tr>
-            <td>House Of Sugar</td>
+            <td><a href="https://sandy.bandcamp.com/album/house-of-sugar" target="_blank">House Of Sugar</a></td>
             <td>2019</td>
             <td>37 min</td>
             <td>3.64/5</td>
         </tr>
         <tr>
-            <td>God Save The Animals</td>
+            <td><a href="https://sandy.bandcamp.com/album/god-save-the-animals" target="_blank">God Save The Animals</a></td>
             <td>2022</td>
             <td>43 min</td>
             <td>3.60/5</td>
         </tr>
-
     </table>
+</div>
+<div class="column">
+        <iframe  src="https://www.youtube.com/embed/qyPquozbCOQ" title="Alex G: Tiny Desk Concert" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+<div class="column">
+    <iframe src="https://www.youtube.com/embed/nFzWojaY_rc" title="Alex G: Secret Brooklyn Basement Show (Live 2014)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+</div>
+    </div>
+</div>
 </body>
 
 </html>
