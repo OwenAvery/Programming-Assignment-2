@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-   
+<link rel="icon" type="image/x-icon" href="favicon-16x16.png">
 </head>
 <style>
     table, td, th {
@@ -24,7 +24,7 @@
         max-width: 100%;
         max-height:100%;
    }
-   img{
+   .img-box{
     width: 270px;
     height:270px;
     object-fit: cover;
@@ -77,12 +77,17 @@
     z-index: -1;
     object-fit: fill;
    }
+   iframe{
+    height: 100%;
+    width:  270px;
+   }
 </style>
 <body background="bg.png">
     <div id="main-header">
-        <h1>Alex G</h1>
-        <h2> "The 21st Century Eliott Smith"</h2>
+        <img src="AlexGLogo.png" width="50%">
+        <h2><em> "The 21st Century Eliott Smith"</em></h2>
         <h3> A Fan Page</h3>
+        <audio autoplay> <source src="Fay.mp3"></audio>
     </div> 
     <div id="body">
         <p>
@@ -94,21 +99,24 @@
         </p>
         <div class="flex">
             <div class="column">
-                <img src="ALexG.jpg" >
+                <img src="ALexG.jpg" class="img-box">
                 <figcaption>Image Source: NME</figcaption>
             </div>
             <div class="column">
-            <img src="Gman2.jpg">
+            <img src="Gman2.jpg" class="img-box">
             <figcaption> Image Source: NPR</figcaption>
         </div>
         <div class="column">
-            <img src="Gman3.webp" >
-            <figcaption>Source: Pitchfork</figcaption>
+            <img src="Gman3.webp" class="img-box">
+            <figcaption>Image Source: Pitchfork</figcaption>
         </div>
         </div>
         
         
 <div class="flex">
+    <div class="column">
+        <iframe  src="https://www.youtube.com/embed/qyPquozbCOQ" title="Alex G: Tiny Desk Concert" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
     <div class="column">
     <table>
         <tr>
@@ -161,9 +169,7 @@
         </tr>
     </table>
 </div>
-<div class="column">
-        <iframe  src="https://www.youtube.com/embed/qyPquozbCOQ" title="Alex G: Tiny Desk Concert" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
+
 <div class="column">
     <iframe src="https://www.youtube.com/embed/nFzWojaY_rc" title="Alex G: Secret Brooklyn Basement Show (Live 2014)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
